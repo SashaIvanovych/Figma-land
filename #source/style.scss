@@ -60,6 +60,7 @@ body {
     display: inline-block;
     text-align: center;
     transition: all 0.3s ease 0s;
+    cursor: pointer;
 
     &:hover {
         border: 1px solid #909090;
@@ -439,7 +440,7 @@ body {
 
         @media(max-width: 767.98px) {
             padding-top: 40px;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
         }
     }
 }
@@ -638,7 +639,7 @@ body {
 
         @media(max-width: 767.98px) {
             padding-top: 40px;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
         }
     }
 }
@@ -778,7 +779,7 @@ body {
 
         @media(max-width: 767.98px) {
             padding-top: 40px;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
         }
     }
 }
@@ -911,5 +912,223 @@ body {
                 padding-bottom: 80%;
             }
         }
+    }
+}
+
+.page {
+
+    // .page__partners
+
+    &__partners {
+        padding-top: 160px;
+        padding-bottom: 50px;
+
+        @media(max-width: 991.98px) {
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+
+        @media(max-width: 767.98px) {
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.partners {
+
+    // .partners__container
+
+    &__container {
+        text-align: center;
+    }
+
+    // .partners__title
+
+    &__title {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    // .partners__text
+
+    &__text {
+
+        &:not(:last-child) {
+            margin-bottom: 55px;
+
+            @media(max-width: 991.98px) {
+                margin-bottom: 45px;
+            }
+
+            @media(max-width: 767.98px) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+
+    // .partners__logos
+
+    &__logos {
+        &:not(:last-child) {
+            margin-bottom: 45px;
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap:74px;
+        row-gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    // .partners__logo
+
+    &__logo {}
+}
+
+@media(max-width: 767.98px) {
+    .partners__logos {
+        column-gap: 40px;
+    }
+}
+
+.page {
+
+    // .page__testimonials
+
+    &__testimonials {
+        padding-top: 160px;
+        padding-bottom: 50px;
+
+        @media(max-width: 991.98px) {
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+
+        @media(max-width: 767.98px) {
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.testimonials {
+
+    // .testimonials__container
+
+    &__container {}
+
+    // .testimonials__title
+
+    &__title {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    // .testimonials__items
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        column-gap: 23px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    // .testimonials__item
+
+    &__item {}
+}
+
+.item-testimonials {
+    border-radius: 10px;
+    border: 1px solid #dedede;
+    padding: 40px 70px 40px 40px;
+    // .item-testimonials__header
+
+    &__header {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    // .item-testimonials__avatar
+
+    &__avatar {
+        width: 50px;
+        height: 51px;
+        overflow: hidden;
+        border-radius: 50%;
+
+        img {
+
+            transform: scale(1.03);
+        }
+    }
+
+    // .item-testimonials__body
+
+    &__body {}
+
+    // .item-testimonials__name
+
+    &__name {
+        font-weight: 500;
+        line-height: 150%;
+        /* 24/16 */
+        letter-spacing: .2px;
+    }
+
+    // .item-testimonials__job
+
+    &__job {
+        font-weight: 500;
+        line-height: 150%;
+        /* 24/16 */
+        letter-spacing: .2px;
+    }
+
+    // .item-testimonials__text
+
+    &__text {
+        line-height: 150%;
+        letter-spacing: .2px;
+        max-width: 320px;
+    }
+}
+
+@media(max-width:767.98px) {
+    .testimonials__items {
+        flex-direction: column;
+        row-gap: 23px;
+    }
+
+    .item-testimonials__text {
+        max-width: none;
+    }
+
+    .testimonials__column {
+        row-gap: 23px;
+    }
+}
+
+@media(max-width: 575.98px) {
+    .item-testimonials {
+        padding: 30px 20px 30px 20px;
+    }
+
+    .testimonials__title {
+        font-size: 44px;
     }
 }
